@@ -68,15 +68,15 @@ resources:
 extends:
   template: Kubernetes-Deployments/microservice.yaml@cicd
   parameters:
-    Deploy_to_DEV: ${{parameters.Deploy_to_DEV}}
-    Deploy_to_QA: ${{parameters.Deploy_to_QA}}
-    Deploy_to_UAT: ${{parameters.Deploy_to_UAT}}
-    Deploy_to_OPS: ${{parameters.Deploy_to_OPS}}
-    Deploy_to_PREPROD: ${{parameters.Deploy_to_PREPROD}}
-    Deploy_to_PROD: ${{parameters.Deploy_to_PROD}}
-    QA_Package_version: ${{parameters.QA_Package_version}}
-    UAT_Package_version: ${{parameters.UAT_Package_version}}
-    PROD_Package_version: ${{parameters.PROD_Package_version}}
-    PREPROD_Package_version: ${{parameters.PREPROD_Package_version}}
-    OPS_Package_version: ${{parameters.OPS_Package_version}}
-    Prod_Source_Feed: ${{parameters.Prod_Source_Feed}}
+    Deploy_to_DEV: ${{ parameters.Deploy_to_DEV }}
+    Deploy_to_QA: ${{ parameters.Deploy_to_QA }}
+    Deploy_to_UAT: ${{ parameters.Deploy_to_UAT }}
+    Deploy_to_OPS: ${{ parameters.Deploy_to_OPS }}
+    Deploy_to_PREPROD: ${{ parameters.Deploy_to_PREPROD }}
+    Deploy_to_PROD: ${{ parameters.Deploy_to_PROD }}
+    QA_Package_version: ${{ parameters.QA_Package_version }}
+    UAT_Package_version: ${{ parameters.UAT_Package_version }}
+    PROD_Package_version: ${{ parameters.PROD_Package_version }}
+    PREPROD_Package_version: ${{ parameters.PREPROD_Package_version }}
+    OPS_Package_version: ${{ parameters.OPS_Package_version }}
+    Prod_Source_Feed: ${{ parameters.Prod_Source_Feed }}
